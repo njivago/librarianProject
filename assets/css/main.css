@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'Dosis-Medium'; /* Имя шрифта */
+    src: url(../fonts/Dosis-Medium.ttf); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+    font-family: 'Dosis-Bold'; /* Имя шрифта */
+    src: url(../fonts/Dosis-Bold.ttf); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+    font-family: 'Dosis-Regular'; /* Имя шрифта */
+    src: url(../fonts/Dosis-Regular.ttf); /* Путь к файлу со шрифтом */
+   }
+body {
+    background: url(../img/photo-1507842217343-583bb7270b66.jpg) no-repeat center center /cover;
+    height: 100vh;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    font-family: 'Dosis-Bold';
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 5vh;
+    position: relative;
+}
+.navbar-link a {
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+}
+.navbar-link {
+    margin: 0 30px;
+    padding: 0 10px;
+    border-left: 1px grey solid;
+    border-right: 1px grey solid;
+    transition: all 0.3s ease;
+}
+.navbar-link:hover {
+    background-color: rgb(73, 60, 60);
+}
+.navbar-title {
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    left: 10vw;
+    cursor: pointer;
+}
+.wrapper {
+    width: 60vw;
+    margin: 0 auto;
+    background: rgb(111,39,33);
+    background: radial-gradient(circle, rgba(111,39,33,1) 0%, rgba(112,35,29,1) 50%, rgba(119,54,48,1) 85%, rgba(178,98,83,1) 99%, rgba(230,138,115,1) 100%);
+    min-height: 50vh;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.title__tab {
+    color: white;
+    font-family: 'Dosis-Medium';
+    font-size: 28px;
+}
+.title__add {
+    display: flex;
+    justify-content: space-between;
+}
+.add_btn {
+    font-family: 'Dosis-Regular';
+    font-size: 18px;
+}
+.form__ {
+    display: flex;
+    justify-content: space-between;
+}
+.tr__visitors {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+}
+.list__table {
+    background-image: linear-gradient( 109.6deg,  rgba(22,155,215,1) 11.2%, rgba(34,45,101,1) 99.8% );
+    margin-top: 10px;
+}
+ul {
+    list-style-type: none;
+    font-family: 'Dosis-Medium';
+    font-size: 18px;
+    margin:0;
+    padding: 0;
+}
+li {
+    padding: 5px;
+    text-align: center;
+    border: 1px black solid;
+    color: white;
+}
+.tr__books {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr 1fr 1fr;
+}
+.tr__cards {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr 1fr;
+}
+.container {
+    display: none;
+}
+.active {
+    display: block;
+}
+.modal {
+    /* display: none;  */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%;
+    font-family: 'Dosis-medium';
+  }
+  
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  } 
+
+.add_form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.modal-content button {
+    width: 52%;
+    height: 30px;
+    margin: 10px auto;
+}
+label {
+    width: 80%;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+}
+.edit__button, .remove__button, .return__btn {
+    width: 40px;
+    height: 18px;
+}

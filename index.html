@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-title">LIBRARY</div>
+        <div class="navbar-link" >
+            <a href="#" data-cont="books" id="navbar-link">Books</a>
+        </div>
+        <div class="navbar-link" >
+            <a href="#" data-cont="vis" id="navbar-link">Visitors</a>
+        </div>
+        <div class="navbar-link" >
+            <a href="#" data-cont="cards" id="navbar-link">Cards</a>
+        </div>
+        <div class="navbar-link">
+            <a href="#">Statistics</a>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <div class="container active" data-cont="books">
+            <div class="title__add">
+                <span class="title__tab">All books:</span>
+                <button class="add_btn" data-prop="books">New Book</button>
+            </div>
+            <hr>
+            <div class="form__">
+                <form class="sorting__form">
+                    <span class="title__tab">Sort by:</span>
+                    <select name="book_sort" id="book">
+                        <option value="id" selected>ID</option>
+                        <option value="author">Author name</option>
+                        <option value>Count at library</option>
+                    </select>
+                    <button type="submit">Sort</button>
+                </form>
+                <form class="search__form">
+                    <input type="text" class="search__input" placeholder="Search">
+                    <button type="submit">Go</button>
+                </form>
+            </div>
+                <div class="list__table books">
+                    <ul class="tr__books">
+                        <li>ID</li>
+                        <li>Name</li>
+                        <li>Author</li>
+                        <li>Count</li>
+                        <li>Edit</li>
+                        <li>Delete</li>
+                    </ul>
+                    <ul class="tr__books">
+                        <li>1</li>
+                        <li>Romeo and Juilet</li>
+                        <li>Shakespeare</li>
+                        <li>4</li>
+                        <li><button type="button" class="edit__button" data-prop="books"></button></li>
+                        <li><button type="button" class="remove__button"></button></li>
+                    </ul>
+                    <ul class="tr__books">
+                        <li>2</li>
+                        <li>Romeo and Juilet</li>
+                        <li>Shakespeare</li>
+                        <li>1</li>
+                        <li><button type="button" class="edit__button" data-prop="books"></button></li>
+                        <li><button type="button" class="remove__button"></button></li>
+                    </ul>
+                    <ul class="tr__books">
+                        <li>3</li>
+                        <li>Romeo and Juilet</li>
+                        <li>Shakespeare</li>
+                        <li>4</li>
+                        <li><button type="button" class="edit__button" data-prop="books"></button></li>
+                        <li><button type="button" class="remove__button"></button></li>
+                    </ul>
+                    <ul class="tr__books">
+                        <li>4</li>
+                        <li>Romeo and Juilet</li>
+                        <li>Shakespeare</li>
+                        <li>2</li>
+                        <li><button type="button" class="edit__button" data-prop="books"></button></li>
+                        <li><button type="button" class="remove__button"></button></li>
+                    </ul>
+
+                </div>
+        </div>
+        <div class="container" data-cont="vis">
+                <div class="title__add">
+                    <span class="title__tab">All visitors:</span>
+                    <button class="add_btn" data-prop="vis">New Visitor</button>
+                </div>
+                <hr>
+                <div class="form__">
+                    <form class="sorting__form">
+                        <span class="title__tab">Sort by:</span>
+                        <select name="book_sort" id="book">
+                            <option value="id" selected>ID</option>
+                            <option value="name">Visitor name</option>
+                        </select>
+                        <button type="submit">Sort</button>
+                    </form>
+                    <form class="search__form">
+                        <input type="text" class="search__input" placeholder="Search">
+                        <button type="submit">Go</button>
+                    </form>
+                </div>
+                    <div class="list__table vis">
+                        <ul class="tr__visitors">
+                            <li>ID</li>
+                            <li>Name</li>
+                            <li>Phone</li>
+                            <li>Edit</li>
+                        </ul>
+                        <ul class="tr__visitors">
+                            <li>1</li>
+                            <li>Alex</li>
+                            <li>098 84 256 0122</li>
+                            <li><button type="button" class="edit__button" data-prop="vis"></button></li>
+                        </ul>
+                        <ul class="tr__visitors">
+                            <li>2</li>
+                            <li>Alex</li>
+                            <li>098 84 256 0122</li>
+                            <li><button type="button" class="edit__button" data-prop="vis"></button></li>
+                        </ul>
+                        <ul class="tr__visitors">
+                            <li>3</li>
+                            <li>Alex</li>
+                            <li>098 84 256 0122</li>
+                            <li><button type="button" class="edit__button" data-prop="vis"></button></li>
+                        </ul>
+                        <ul class="tr__visitors">
+                            <li>4</li>
+                            <li>Alex</li>
+                            <li>098 84 256 0122</li>
+                            <li><button type="button" class="edit__button" data-prop="vis"></button></li>
+                        </ul>
+                    </div>
+        </div>
+        <div class="container" data-cont="cards">
+                <div class="title__add">
+                    <span class="title__tab">All cards:</span>
+                    <button class="add_btn" data-prop="cards">New Card</button>
+                </div>
+                <hr>
+                <div class="form__">
+                    <form class="sorting__form">
+                        <span class="title__tab">Sort by:</span>
+                        <select name="acrds_sort" id="card">
+                            <option value="id" selected>ID</option>
+                            <option value="name">Visitor name</option>
+                            <option value="borrow">Borrow date</option>
+                        </select>
+                        <button type="submit">Sort</button>
+                    </form>
+                    <form class="search__form">
+                        <input type="text" class="search__input" placeholder="Search">
+                        <button type="submit">Go</button>
+                    </form>
+                </div>
+                    <div class="list__table cards">
+                        <ul class="tr__cards">
+                            <li>ID</li>
+                            <li>Visitor</li>
+                            <li>Book</li>
+                            <li>Borrow Date</li>
+                            <li>Return Date</li>
+                        </ul>
+                        <ul class="tr__cards">
+                            <li>1</li>
+                            <li>Alex</li>
+                            <li>Eugene Onegin</li>
+                            <li>11/16/2021</li>
+                            <li><button type="button" class="return__btn"></button></li>
+                        </ul>
+                        <ul class="tr__cards">
+                            <li>2</li>
+                            <li>Alex</li>
+                            <li>Eugene Onegin</li>
+                            <li>11/16/2021</li>
+                            <li><button type="button" class="return__btn"></button></li>
+                        </ul>
+                        <ul class="tr__cards">
+                            <li>3</li>
+                            <li>Alex</li>
+                            <li>Eugene Onegin</li>
+                            <li>11/16/2021</li>
+                            <li><button type="button" class="return__btn"></button></li>
+                        </ul>
+                        <ul class="tr__cards">
+                            <li>4</li>
+                            <li>Alex</li>
+                            <li>Eugene Onegin</li>
+                            <li>11/16/2021</li>
+                            <li><button type="button" class="return__btn"></button></li>
+                        </ul>
+                    </div>
+        </div>
+        <!-- <div class="container__statistics"></div> -->
+
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
